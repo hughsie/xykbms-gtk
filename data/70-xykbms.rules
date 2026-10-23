@@ -1,0 +1,3 @@
+# XYKBMS (xy_3dg12) ThinkPad keyboard controllers: allow the logged-in user to
+# open the hidraw configuration interface without root
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="5859", TAG+="uaccess"
