@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2026 Richard Hughes <richard@hughsie.com> -->
+<component type="desktop-application">
+  <id>io.github.hughsie.xykbms-gtk</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LGPL-2.1-or-later</project_license>
+  <name>XYKBMS Keyboard Configuration</name>
+  <summary>Configure and update XY ThinkPad keyboard controller boards</summary>
+  <description>
+    <p>
+      A native replacement for the Windows XYKBMS_SwUpdate tool, used to configure
+      and update the XY ThinkPad classic keyboard to USB-C converter boards.
+    </p>
+    <p>Features include:</p>
+    <ul>
+      <li>Read, modify and write the keyboard configuration</li>
+      <li>Load pin and layer configuration files to change the key map</li>
+      <li>Read scan codes to build your own key map</li>
+      <li>Show the firmware version and battery voltage, and set the backlight level</li>
+      <li>Upgrade the BOOT, APP and USB firmware</li>
+      <li>Open and save configuration backups</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">io.github.hughsie.xykbms-gtk.desktop</launchable>
+  <developer id="com.hughsie">
+    <name>Richard Hughes</name>
+  </developer>
+  <url type="homepage">https://github.com/hughsie/xykbms-gtk</url>
+  <url type="bugtracker">https://github.com/hughsie/xykbms-gtk/issues</url>
+  <url type="vcs-browser">https://github.com/hughsie/xykbms-gtk</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/hughsie/xykbms-gtk/main/screenshot.png</image>
+      <caption>Reading and changing the keyboard configuration</caption>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Settings</category>
+    <category>HardwareSettings</category>
+  </categories>
+  <keywords>
+    <keyword>ThinkPad</keyword>
+    <keyword>keyboard</keyword>
+    <keyword>TrackPoint</keyword>
+    <keyword>firmware</keyword>
+  </keywords>
+  <provides>
+    <binary>xykbms-gtk</binary>
+    <binary>xykbms-tool</binary>
+    <modalias>usb:v5859p*</modalias>
+  </provides>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </supports>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.1.0" date="2026-10-27">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+</component>
